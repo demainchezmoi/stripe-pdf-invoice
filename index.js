@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const sizeOf = require('image-size');
 
-const template = require(`./templates/default`);
+const template = require('./templates/default');
 
 module.exports = (key, config = {}) => async (invoiceId, data = {}) => {
   const stripe = new Stripe(key);
